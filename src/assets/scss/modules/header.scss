@@ -11,10 +11,16 @@
   &__logo {
     font-size: rem(24);
     color: $mainFontColor;
+
+    @include laptop {
+      flex: 1;
+    }
   }
 
   &__nav {
-
+    @include laptop {
+      display: none;
+    }
   }
 
   &__lang {
@@ -23,6 +29,15 @@
 
   &__contacts {
     color: $secondFontColor;
+  }
+
+  &__hamburger {
+    display: none;
+    margin-left: rem(50);
+
+    @include laptop {
+      display: block;
+    }
   }
 
 }

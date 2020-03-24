@@ -4,6 +4,19 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
+
+  @include desktop {
+    font-size: 16px;
+  }
+  @include laptop {
+    font-size: 15px;
+  }
+  @include tablet {
+    font-size: 14px;
+  }
+  @include phone {
+    font-size: 13px;
+  }
 }
 
 body {
@@ -37,12 +50,11 @@ section, .section {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  //min-height: 100vh;
 }
 
 .container {
-  width: 100%;
-  max-width: 1249px;
+  max-width: 95%;
+  width: 1249px;
   position: relative;
   margin: 0 auto;
 }
@@ -52,11 +64,11 @@ section, .section {
   color: $secondFontColor;
   cursor: pointer;
   background-color: transparent;
-  z-index: 100;
+  z-index: 10;
 
   &--single {
-    width: 73px;
-    height: 73px;
+    width: rem(73);
+    height: rem(73);
     border: 2px solid $mainFontColor;
     border-radius: 50%;
     background-color: transparent;
@@ -65,13 +77,14 @@ section, .section {
   &--features {
     color: $mainFontColor;
     position: relative;
-    padding: 0 115px;
+    padding: 0 rem(115);
     background: rgba(87, 79, 70, 0.8);
-    margin: 10px;
+    margin: rem(10);
     text-align: center;
-    height: 120px;
+    height: rem(120);
     display: flex;
     align-items: center;
+    font-size: $mainFontSize;
 
     &--border {
       border: 1px solid $neutral-secondary;
@@ -85,7 +98,7 @@ section, .section {
     &:after {
       content: '';
       display: block;
-      width: 80px;
+      width: rem(80);
       height: 2px;
       border-radius: 2px;
       background-color: $mainFontColor;
@@ -93,14 +106,14 @@ section, .section {
       top: 50%;
       left: 0;
       transform: translateY(-50%);
-      margin-left: 20px;
+      margin-left: rem(20);
 
     }
 
     &:before {
       content: '';
       display: block;
-      width: 80px;
+      width: rem(80);
       height: 2px;
       border-radius: 2px;
       background-color: $mainFontColor;
@@ -108,20 +121,20 @@ section, .section {
       top: 50%;
       right: 0;
       transform: translateY(-50%);
-      margin-right: 20px;
+      margin-right: rem(20);
     }
   }
 }
 
 .title {
-  font-size: 30px;
+  font-size: rem(30);
   position: relative;
   line-height: rem(60);
 
   &:before {
     content: '';
     display: block;
-    width: 311px;
+    width: rem(311);
     height: 2px;
     border-radius: 2px;
     background-color: $mainFontColor;

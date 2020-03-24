@@ -1,8 +1,13 @@
 .features {
   display: grid;
-  grid-template-columns: repeat(13, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   grid-template-rows: repeat(24, 5vw);
   grid-gap: 10px;
+
+  @include laptop {
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(31, 5vw);
+  }
 
   &__dark-box {
     position: absolute;
@@ -29,70 +34,119 @@
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 7;
+
+    @include laptop {
+      grid-column-start: 1;
+      grid-column-end: 8;
+    }
   }
 
   &__service {
     background-image: url("/assets/img/image2.png");
     grid-column-start: 7;
-    grid-column-end: 14;
+    grid-column-end: 16;
     grid-row-start: 1;
     grid-row-end: 7;
+
+    @include laptop {
+      grid-column-start: 8;
+      grid-column-end: 16;
+    }
   }
 
   &__collection {
     background-image: url("/assets/img/image4.png");
     grid-column-start: 1;
-    grid-column-end: 9;
+    grid-column-end: 10;
     grid-row-start: 7;
     grid-row-end: 13;
+
+    @include laptop {
+      grid-column-start: 1;
+      grid-column-end: 8;
+    }
+
   }
 
   &__design {
     background-image: url("/assets/img/image5.png");
-    grid-column-start: 9;
-    grid-column-end: 14;
+    grid-column-start: 10;
+    grid-column-end: 16;
     grid-row-start: 7;
     grid-row-end: 13;
+
+    @include laptop {
+      grid-column-start: 8;
+      grid-column-end: 16;
+    }
   }
 
   &__request {
     background-image: url("/assets/img/image6.png");
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
     grid-row-start: 13;
     grid-row-end: 19;
+
+    @include laptop {
+      grid-column-end: 8;
+    }
   }
 
   &__cloth {
     background-image: url("/assets/img/image7.png");
-    grid-column-start: 5;
-    grid-column-end: 10;
+    grid-column-start: 6;
+    grid-column-end: 11;
     grid-row-start: 13;
     grid-row-end: 19;
+
+    @include laptop {
+      grid-column-start: 8;
+      grid-column-end: 16;
+    }
   }
 
   &__leather {
     background-image: url("/assets/img/image8.png");
-    grid-column-start: 10;
-    grid-column-end: 14;
+    grid-column-start: 11;
+    grid-column-end: 16;
     grid-row-start: 13;
     grid-row-end: 19;
+
+    @include laptop {
+      grid-column-start: 1;
+      grid-column-end: 8;
+      grid-row-start: 19;
+      grid-row-end: 25;
+    }
   }
 
   &__personal {
     background-image: url("/assets/img/image9.png");
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 8;
     grid-row-start: 19;
     grid-row-end: 25;
+
+    @include laptop {
+      grid-column-start: 8;
+      grid-column-end: 16;
+    }
   }
 
   &__contacts {
     background-image: url("/assets/img/image10.png");
-    grid-column-start: 7;
-    grid-column-end: 14;
+    grid-column-start: 8;
+    grid-column-end: 16;
     grid-row-start: 19;
     grid-row-end: 25;
+
+    @include laptop {
+      grid-column-start: 1;
+      grid-column-end: 16;
+      grid-row-start: 25;
+      grid-row-end: 32;
+    }
   }
 }
 
