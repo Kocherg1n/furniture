@@ -1,0 +1,100 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(24, 5vw);
+  grid-gap: 10px;
+
+  &__dark-box {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &__item {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__technology {
+    background-image: url("/assets/img/image3.png");
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+
+  &__service {
+    background-image: url("/assets/img/image2.png");
+    grid-column-start: 7;
+    grid-column-end: 14;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+
+  &__collection {
+    background-image: url("/assets/img/image4.png");
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 13;
+  }
+
+  &__design {
+    background-image: url("/assets/img/image5.png");
+    grid-column-start: 9;
+    grid-column-end: 14;
+    grid-row-start: 7;
+    grid-row-end: 13;
+  }
+
+  &__request {
+    background-image: url("/assets/img/image6.png");
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 13;
+    grid-row-end: 19;
+  }
+
+  &__cloth {
+    background-image: url("/assets/img/image7.png");
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 13;
+    grid-row-end: 19;
+  }
+
+  &__leather {
+    background-image: url("/assets/img/image8.png");
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 13;
+    grid-row-end: 19;
+  }
+
+  &__personal {
+    background-image: url("/assets/img/image9.png");
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 19;
+    grid-row-end: 25;
+  }
+
+  &__contacts {
+    background-image: url("/assets/img/image10.png");
+    grid-column-start: 7;
+    grid-column-end: 14;
+    grid-row-start: 19;
+    grid-row-end: 25;
+  }
+}
+
+
+

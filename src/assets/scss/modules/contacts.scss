@@ -1,0 +1,17 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__phone {
+    font-family: $mainFont;
+    font-size: rem(24);
+    color: $secondFontColor;
+  }
+
+  &__button {
+    font-size: 14px;
+    border: 1px solid $secondFontColor;
+    padding: 6px 23px;
+  }
+}

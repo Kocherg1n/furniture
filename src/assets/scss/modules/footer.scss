@@ -1,1 +1,31 @@
-// footer style
+.footer {
+  height: 100%;
+
+  &__content {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__logo {
+    font-size: rem(24);
+    color: $mainFontColor;
+  }
+
+  &__menu {
+
+  }
+
+  &__sub-footer {
+    border-top: 1px solid #606266;
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0;
+  }
+
+  &__year {
+    color: $secondFontColor;
+  }
+
+
+}

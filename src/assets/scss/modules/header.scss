@@ -1,1 +1,28 @@
-// header style
+.header {
+  background-color: #574F46;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  &__logo {
+    font-size: rem(24);
+    color: $mainFontColor;
+  }
+
+  &__nav {
+
+  }
+
+  &__lang {
+
+  }
+
+  &__contacts {
+    color: $secondFontColor;
+  }
+
+}

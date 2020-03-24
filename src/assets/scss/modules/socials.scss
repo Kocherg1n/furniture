@@ -1,0 +1,28 @@
+.socials {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+
+  }
+
+  &__circle {
+    width: 30px;
+    height: 30px;
+    background-color: $secondFontColor;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

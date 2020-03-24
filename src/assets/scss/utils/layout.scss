@@ -1,0 +1,146 @@
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #574F46
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a { text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section, .section {
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  //min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1249px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: $mainFont;
+  color: $secondFontColor;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 100;
+
+  &--single {
+    width: 73px;
+    height: 73px;
+    border: 2px solid $mainFontColor;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &--features {
+    color: $mainFontColor;
+    position: relative;
+    padding: 0 115px;
+    background: rgba(87, 79, 70, 0.8);
+    margin: 10px;
+    text-align: center;
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+    &--border {
+      border: 1px solid $neutral-secondary;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $mainFontColor;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      margin-left: 20px;
+
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $mainFontColor;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      margin-right: 20px;
+    }
+  }
+}
+
+.title {
+  font-size: 30px;
+  position: relative;
+  line-height: rem(60);
+
+  &:before {
+    content: '';
+    display: block;
+    width: 311px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $mainFontColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $secondFontColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

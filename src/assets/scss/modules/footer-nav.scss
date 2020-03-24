@@ -1,0 +1,26 @@
+.footer-nav {
+  margin-left: rem(120);
+  &__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.6fr 0.8fr 1.5fr 0.5fr;
+    grid-gap: rem(20);
+    grid-column-gap: rem(70);
+  }
+
+  &__item {
+
+
+
+  }
+
+  &__link {
+    color: $secondFontColor;
+
+    &:hover {
+      color: $mainFontColor;
+      transition: 0.2s;
+    }
+  }
+}
+
