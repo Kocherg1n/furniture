@@ -5,7 +5,6 @@
   width: rem(30);
   height: rem(30);
   cursor: pointer;
-  z-index: 20;
   position: relative;
 
   &__menu-icon {
@@ -24,7 +23,6 @@
       background-color: $secondFontColor;
       bottom: 8px;
       border-radius: 2px;
-      transition: transform 0.2s ease-in, bottom 0.2s linear 0.2s;
     }
 
     &:after {
@@ -35,49 +33,6 @@
       background-color: $secondFontColor;
       top: 8px;
       border-radius: 2px;
-      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
     }
   }
-
-  //&__close {
-  //  position: absolute;
-  //  top: 4%;
-  //  right: 4%;
-  //  transform: rotate(45deg);
-  //  width: rem(25);
-  //  height: rem(25);
-  //  z-index: 10000;
-  //
-  //  &:hover .hamburger__close-cross {
-  //    transition: 0.2s;
-  //    background-color: red;
-  //  }
-  //
-  //  &:hover .hamburger__close-cross:after {
-  //    transition: 0.2s;
-  //    background-color: red;
-  //  }
-  //
-  //  &-cross {
-  //    width: rem(30);
-  //    height: 5px;
-  //    background: $secondFontColor;
-  //    border-radius: 1px;
-  //    position: relative;
-  //    cursor: pointer;
-  //
-  //    &:after {
-  //      content: '';
-  //      display: block;
-  //      position: absolute;
-  //      width: 5px;
-  //      height: rem(30);
-  //      background: $secondFontColor;
-  //      border-radius: 1px;
-  //      top: 50%;
-  //      left: 50%;
-  //      transform: translate(-50%, -50%);
-  //    }
-  //  }
-  //}
 }
