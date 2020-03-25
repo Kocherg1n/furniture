@@ -17,6 +17,10 @@
       display: block;
     }
 
+    &:hover .nav__sub-nav-list-second {
+      display: flex;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -36,6 +40,10 @@
     left: 50%;
     transform: translateX(-50%);
     top: 35px;
+
+    &-second {
+      width: 470px;
+    }
 
     &-lang {
       width: 140px;
@@ -83,9 +91,7 @@
     color: $secondFontColor;
     display: block;
     flex: 1;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 15px;
+    padding: 15px 30px;
 
     &:first-child {
       padding-top: 15px;

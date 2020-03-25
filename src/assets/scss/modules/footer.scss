@@ -1,6 +1,10 @@
 .footer {
   height: 100%;
 
+  @include tablet {
+    font-size: 16px;
+  }
+
   &__content {
     display: flex;
     margin-top: 40px;
@@ -10,10 +14,10 @@
   &__logo {
     font-size: rem(24);
     color: $mainFontColor;
-  }
 
-  &__menu {
-
+    @include laptop {
+      display: none;
+    }
   }
 
   &__sub-footer {
@@ -23,9 +27,15 @@
     padding: 21px 0;
   }
 
+  &__logo-sub {
+    opacity: 0;
+
+    @include laptop {
+      opacity: 1;
+    }
+  }
+
   &__year {
     color: $secondFontColor;
   }
-
-
 }

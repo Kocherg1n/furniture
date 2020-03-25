@@ -1,17 +1,23 @@
 .footer-nav {
   margin-left: rem(120);
+
+  @include laptop {
+    margin-left: 0;
+  }
+
   &__list {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1.6fr 0.8fr 1.5fr 0.5fr;
-    grid-gap: rem(20);
-    grid-column-gap: rem(70);
-  }
+    grid-gap: rem(10);
+    grid-column-gap: rem(60);
 
-  &__item {
-
-
-
+    @include phone {
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: .4fr 1.8fr 2fr;
+      grid-gap: rem(15);
+      font-size: 14px;
+    }
   }
 
   &__link {

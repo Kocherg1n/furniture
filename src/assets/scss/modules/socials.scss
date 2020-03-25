@@ -12,10 +12,6 @@
     }
   }
 
-  &__link {
-
-  }
-
   &__circle {
     width: 30px;
     height: 30px;
@@ -24,5 +20,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      background-color: #fff;
+      transition: 0.2s;
+    }
   }
 }
