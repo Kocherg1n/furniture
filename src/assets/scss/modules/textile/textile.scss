@@ -1,0 +1,32 @@
+// Страница "Ткани", секция "Ткани" ========================= //
+
+.textile {
+  padding: 60px 0 210px 0;
+  background-image: url("/assets/img/textile.png");
+  background-size: cover;
+  position: relative;
+  min-height: 740px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(179.84deg, #574F46 0.25%, rgba(87, 79, 70, 0.6) 99.75%);
+  }
+
+  &__title {
+    padding-bottom: 110px;
+  }
+
+  &__description {
+    padding: 0 30%;
+    position: relative;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,82 @@
+// Страница "О Нас", секция "Наши Контакты (ФОРМА)" ========================= //
+
+.form {
+  border: 1px solid #D29965;
+  position: relative;
+  padding: 60px 260px 35px 260px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    background-color: #FFFFFF;
+    width: 85%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &__label {
+    margin-top: 15px;
+  }
+
+  &__name {
+    color: $secondFontColor;
+    font-weight: bold;
+  }
+
+  &__input {
+    border: 1px solid $borderMainColor;
+    width: 100%;
+    padding: 5px 12px;
+    height: 35px;
+  }
+
+  &__textarea {
+    border: 1px solid $borderMainColor;
+    width: 100%;
+    padding: 5px 12px;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  &__button-box {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: underline;
+    margin-bottom: 18px;
+    cursor: pointer;
+  }
+
+  &__button-box {
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 35px;
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,51 @@
+.slider {
+
+
+  &__element {
+
+  }
+
+  &__button--next {
+    background: #D29965;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    right: -20%;
+    background-image: url("/assets/img/icons/arrow-next.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__button--prev {
+    background: #D29965;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    left: -20%;
+    background-image: url("/assets/img/icons/arrow-prev.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    //margin-top: 15px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}

@@ -1,0 +1,76 @@
+// Страница "О Нас", секция "Материалы" ========================= //
+
+.materials {
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 90px;
+  &__title {
+    padding-bottom: 95px;
+  }
+
+  &__content {
+
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: rem(35);
+    min-height: 270px;
+    width: 296px;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      clip-path: polygon(0 65%, 100% 0, 100% 100%, 0% 100%);
+      background-color: #574F46;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__desc {
+    z-index: 10;
+    position: absolute;
+    padding: 14px 26px;
+    bottom: 0;
+  }
+
+  &__desc-title {
+    text-align: center;
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 25px;
+    margin-left: 90px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 155px;
+      position: absolute;
+      background-color: #ffffff;
+      height: 2px;
+      right: 0;
+      bottom: -10px;
+    }
+  }
+
+  &__desc-text {
+    text-align: justify;
+  }
+
+  &__pic {
+    width: 100%;
+  }
+}

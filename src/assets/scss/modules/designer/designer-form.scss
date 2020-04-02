@@ -1,0 +1,90 @@
+
+.designer-form {
+  position: relative;
+  padding-top: 840px;
+
+  &__before {
+    position: relative;
+    width: 1090px;
+    height: 170px;
+    background-color: #D29965;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+
+  &__box {
+    position: absolute;
+    width: 870px;
+    height: 430px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    padding-top: 20px;
+  }
+
+  &__form {
+    margin: 52px 52px 0 52px;
+    padding: 20px 0 40px 0;
+    border: 1px solid #D29965;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__form-title {
+    color: #000000;
+    text-align: center;
+    position: absolute;
+    top: -13px;
+    background-color: #fff;
+    padding: 0 15px;
+  }
+
+  &__label {
+    margin-top: 15px;
+  }
+
+  &__name {
+    color: $secondFontColor;
+    font-weight: bold;
+  }
+
+  &__button-box {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__input {
+    border: 1px solid $borderMainColor;
+    width: 335px;
+    padding: 5px 12px;
+    height: 35px;
+  }
+
+  &__link {
+    color: #000000;
+    text-decoration: underline;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  &__button-box {
+    background-color: #fff;
+    position: absolute;
+    bottom: -23px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  &__button {
+    //position: absolute;
+  }
+
+
+}

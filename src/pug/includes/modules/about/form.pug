@@ -1,0 +1,23 @@
+// Страница "О Нас", секция "Наши Контакты (ФОРМА)" ========================= //
+
+form.form
+	.form__title Если у Вас остались вопросы, заполните форму и мы свяжемся с Вами
+	.form__label
+		.form__name Имя
+		input(type='text' name='name' required).form__input
+	.form__label
+		.form__name Фамилия
+		input(type='text' name='last-name' required).form__input
+	.form__label
+		.form__name Телефон
+		input(type='text' name='phone' required).form__input
+	.form__label
+		.form__name Почта
+		input(type='text' name='mail' required).form__input
+	.form__label
+		.form__name Комментарий
+		textarea(name='comment' rows='7').form__textarea
+	.form__controls
+		a.form__link Пользовательское соглашение
+		.form__button-box
+			button.form__button.button--second Отправить

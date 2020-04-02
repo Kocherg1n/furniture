@@ -1,0 +1,30 @@
+// Страница "Партнеры", секция "Партнеры" ========================= //
+
+.partners-description {
+  padding: 55px 28% 160px 28%;
+  background-image: url("/assets/img/partners.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 570px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: linear-gradient(179.87deg, #574F46 0.25%, rgba(87, 79, 70, 0.42) 99.75%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,185 @@
+// Страница "Встреча с дизайнером", секция "Этапы" ========================= //
+
+.designer-stages {
+  padding: 100px 0;
+
+  &__item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 160px;
+  }
+
+  &__item-left {
+    margin-top: 160px;
+  }
+
+  &__item-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+  }
+
+  &__title {
+    margin-bottom: 110px;
+  }
+
+  &__border {
+    border: 0.5px solid #E5E5E5;
+    border-left: none;
+    padding: 40px 40px 40px 0;
+    max-width: 740px;
+    position: relative;
+
+    &-right {
+      border: 0.5px solid #E5E5E5;
+      border-right: none;
+      padding: 40px 40px 40px 40px;
+      max-width: 740px;
+      position: relative;
+    }
+
+    &-center {
+      border: 0.5px solid #E5E5E5;
+      padding: 40px 40px 40px 40px;
+      max-width: 740px;
+      position: relative;
+    }
+  }
+
+  &__name {
+    position: absolute;
+    top: -23px;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #574F46;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  &__icon {
+    position: absolute;
+    background-color: #574F46;
+    right: -130px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__icon-right {
+    position: absolute;
+    background-color: #574F46;
+    left: -180px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__box1 {
+    background-image: url("/assets/img/stage1.png");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 700px;
+    padding: 50px 90px;
+    text-align: justify;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 10px;
+      bottom: 0;
+      background: rgba(87, 79, 70, 0.6);
+    }
+  }
+
+  &__box2 {
+    background-image: url("/assets/img/stage2.png");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 700px;
+    padding: 50px 90px;
+    text-align: justify;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(87, 79, 70, 0.6);
+    }
+  }
+
+  &__box3 {
+    background-image: url("/assets/img/stage3.png");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 700px;
+    padding: 50px 90px;
+    text-align: justify;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(87, 79, 70, 0.6);
+    }
+  }
+
+  &__box4 {
+    background-image: url("/assets/img/stage4.png");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 650px;
+    padding: 50px 90px;
+    text-align: justify;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(87, 79, 70, 0.6);
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+  }
+
+  &__button-box {
+    background-color: #574F46;
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

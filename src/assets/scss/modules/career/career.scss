@@ -1,0 +1,38 @@
+// Страница "Карьера", секция "Карьера" ========================= //
+
+.career {
+  position: relative;
+  padding-bottom: 70px;
+
+  &__banner {
+    background-image: url("/assets/img/career.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 440px;
+    margin-bottom: 50px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: linear-gradient(179.9deg, #574F46 0.25%, rgba(87, 79, 70, 0.42) 99.75%);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-top: 50px;
+  }
+
+  &__desc {
+    z-index: 10;
+    padding: 0 25%;
+    text-align: justify;
+  }
+
+  &__desc-text {
+    font-size: 20px;
+  }
+}

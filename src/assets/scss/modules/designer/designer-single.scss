@@ -1,0 +1,21 @@
+// Страница "Встреча с дизайнером", секция "Встреча с дизайнером" ========================= //
+
+.designer-single {
+  padding: 50px 0 90px 0;
+  background: url("/assets/img/designer.png");
+  background-size: cover;
+  min-height: 1000px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(179.76deg, #574F46 32.38%, rgba(87, 79, 70, 0.56) 67.1%, rgba(87, 79, 70, 0.8) 99.75%);
+    transform: rotate(-180deg);
+  }
+}

@@ -1,0 +1,32 @@
+// Страница "Карьера", секция "Вакансии" ========================= //
+
+.vacancies {
+
+  &__title {
+
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: flex-start;
+    margin-bottom: 92px;
+  }
+
+  &__item {
+    width: 25%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  &__link {
+    font-size: 24px;
+    color: $secondFontColor;
+
+    &:hover {
+      color: $mainFontColor;
+      transition: 0.2s;
+    }
+  }
+}

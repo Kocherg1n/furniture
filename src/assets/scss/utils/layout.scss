@@ -29,11 +29,17 @@ body {
   background-color: #574F46
 }
 
-*, *:before, *:after { box-sizing: border-box; }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
 ul, li {
   margin: 0;
@@ -43,6 +49,10 @@ ul, li {
 
 section, .section {
   position: relative;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapper {
@@ -123,25 +133,173 @@ section, .section {
       margin-right: rem(20);
     }
   }
+
+  // second button
+
+  &--second {
+    padding: 12px 50px;
+    color: #000000;
+    background: $secondFontColor;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
 }
 
 .title {
   font-size: rem(30);
   position: relative;
-  line-height: rem(60);
+  line-height: rem(30);
+  text-align: center;
 
-  &:before {
-    content: '';
-    display: block;
-    width: rem(311);
-    height: 2px;
-    border-radius: 2px;
-    background-color: $mainFontColor;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &--subtitle {
+    font-size: rem(30);
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+
+    &--number {
+      font-size: 30px;
+      margin-top: 15px;
+      color: #000000;
+      text-align: center;
+      display: block;
+
+      &--color--white {
+        color: $mainFontColor;
+      }
+    }
+
+    //&:before {
+    //  content: '';
+    //  display: block;
+    //  width: rem(311);
+    //  height: 2px;
+    //  border-radius: 2px;
+    //  background-color: #E5E5E5;
+    //  position: absolute;
+    //  bottom: -20%;
+    //  left: 50%;
+    //  transform: translate(-50%, 25%);
+    //}
+    //
+    //&:after {
+    //  content: '';
+    //  display: block;
+    //  width: 10px;
+    //  height: 10px;
+    //  border-radius: 50%;
+    //  background-color: $secondFontColor;
+    //  position: absolute;
+    //  bottom: -25%;
+    //  left: 50%;
+    //  transform: translate(-50%, 25%);
+    //}
   }
+
+  &--subtitle span {
+    font-size: rem(20);
+    display: block;
+  }
+
+  &--color {
+    &--black {
+      color: #000000;
+    }
+  }
+
+  &--about span {
+    font-size: 24px;
+  }
+
+  &--about {
+    font-style: italic;
+    font-size: 48px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 85px;
+      height: 2px;
+      background-color: $mainFontColor;
+      position: absolute;
+      left: -40%;
+      top: 25%;
+      transform: translateY(-50%);
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 85px;
+      height: 2px;
+      background-color: $mainFontColor;
+      position: absolute;
+      right: -40%;
+      top: 25%;
+      transform: translateY(-50%);
+    }
+  }
+
+  //&:before {
+  //  content: '';
+  //  display: block;
+  //  width: rem(311);
+  //  height: 2px;
+  //  border-radius: 2px;
+  //  background-color: #E5E5E5;
+  //  position: absolute;
+  //  top: 50%;
+  //  left: 50%;
+  //  transform: translate(-50%, -50%);
+  //}
+  //
+  //&:after {
+  //  content: '';
+  //  display: block;
+  //  width: 10px;
+  //  height: 10px;
+  //  border-radius: 50%;
+  //  background-color: $secondFontColor;
+  //  position: absolute;
+  //  top: 50%;
+  //  left: 50%;
+  //  transform: translate(-50%, -50%);
+  //}
+}
+
+.subtitle {
+  margin-top: 22px;
+  font-size: 20px;
+}
+
+
+/////
+
+.title__icon {
+
+  content: '';
+  display: block;
+  width: rem(311);
+  height: 2px;
+  border-radius: 2px;
+  background-color: #E5E5E5;
+  bottom: -15px;
+  position: relative;
+  margin: 0 auto;
+
+  //&:before {
+  //  content: '';
+  //  display: block;
+  //  width: rem(311);
+  //  height: 2px;
+  //  border-radius: 2px;
+  //  background-color: #E5E5E5;
+  //  position: absolute;
+  //  left: 50%;
+  //  transform: translate(-50%, 25%);
+  //  bottom: -15px;
+  //}
 
   &:after {
     content: '';
@@ -151,8 +309,11 @@ section, .section {
     border-radius: 50%;
     background-color: $secondFontColor;
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 25%);
+    bottom: -2px;
   }
 }
+
+
+
