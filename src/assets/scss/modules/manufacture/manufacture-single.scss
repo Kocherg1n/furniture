@@ -1,0 +1,31 @@
+.manufacture-single {
+  background-image: url("/assets/img/manufacture.png");
+  min-height: 800px;
+  background-position: center;
+  background-size: cover;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(179.82deg, rgba(87, 79, 70, 0.4) 0.25%, rgba(87, 79, 70, 0.5) 99.75%, rgba(87, 79, 70, 0) 99.75%);
+  }
+
+  &__title {
+    margin-top: 70px;
+  }
+
+  &__desc {
+    margin-top: 100px;
+    padding: 0 25%;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+}

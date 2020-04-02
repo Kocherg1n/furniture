@@ -1,0 +1,30 @@
+
+.cooperation-single {
+  padding: 60px 0 210px 0;
+  background-image: url("/assets/img/cooperation.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 1000px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(87, 79, 70, 0.55);
+  }
+
+  &__description {
+    margin-top: 200px;
+    z-index: 10;
+    position: relative;
+    padding: 0 30%;
+  }
+
+  &__text {
+  text-align: justify;
+  }
+}
