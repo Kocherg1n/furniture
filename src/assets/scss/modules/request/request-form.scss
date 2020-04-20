@@ -1,50 +1,16 @@
-// Страница "Заявка", секция "Форма" ========================= //
+ //Страница "Заявка", элемент "Форма" ========================= //
 
-.request-form {
-  position: relative;
-  padding-top: 840px;
-
-  &__before {
-    position: relative;
-    width: 1090px;
-    height: 170px;
-    background-color: #D29965;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  }
-
-  &__box {
-    position: absolute;
-    width: 720px;
-    height: 500px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.form-request {
+  padding: 30px 130px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   &__title {
-    padding-top: 20px;
-  }
-
-  &__form {
-    margin: 52px 52px 0 52px;
-    padding: 20px 0 40px 0;
-    border: 1px solid #D29965;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  &__form-title {
-    color: #000000;
+    color: $mainFontColor;
     text-align: center;
-    position: absolute;
-    top: -13px;
-    background-color: #fff;
-    padding: 0 15px;
+    font-size: rem(24);
   }
 
   &__label {
@@ -56,36 +22,148 @@
     font-weight: bold;
   }
 
-  &__button-box {
-    position: absolute;
-    bottom: 0;
+  &__name-radio {
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+
+  &__radio {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__input {
-    border: 1px solid $borderMainColor;
-    width: 335px;
+    border: 0 solid $borderMainColor;
+    border-bottom: 2px solid $borderMainColor;
+    color: $mainFontColor;
+    width: 333px;
     padding: 5px 12px;
     height: 35px;
+    outline: none;
+    background-color: transparent;
+  }
+
+  &__input-radio {
+
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+  }
+
+  &__textarea {
+    border: 0 solid $borderMainColor;
+    color: $mainFontColor;
+    border-bottom: 2px solid $borderMainColor;
+    width: 333px;
+    padding: 5px 9px;
+    background-color: transparent;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+  &__controls-radio {
+    display: flex;
+  }
+
+  &__controls-title {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #FFFFFF;
   }
 
   &__link {
+    font-size: 16px;
     color: #000000;
     text-decoration: underline;
-    margin-top: 15px;
+    margin-bottom: 18px;
+    cursor: pointer;
+  }
+
+  &__personal-data {
     font-size: 16px;
+    color: #FFFFFF;
   }
 
-  &__button-box {
-    background-color: #fff;
+  &__personal-data-link {
+    text-decoration: underline;
+    margin-left: 5px;
+    color: #FFFFFF;
+  }
+
+  &__input-radio {
     position: absolute;
-    bottom: -23px;
-    padding-right: 10px;
-    padding-left: 10px;
+    opacity: 0;
   }
 
-  &__button {
-    //position: absolute;
+  &__input-checkbox {
+    position: absolute;
+    opacity: 0;
   }
 
+  &__checkbox-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    position: relative;
+    margin-right: 12px;
 
+    &:after {
+      content: url("/assets/img/icons/check.svg");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  &__input-checkbox:checked + .form-request__checkbox-icon:after {
+    opacity: 1;
+    transition: .2s;
+  }
+
+  &__radio-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: relative;
+    margin-right: 15px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      background-color: $secondFontColor;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  &__input-radio:checked + .form-request__radio-icon:after {
+    opacity: 1;
+    transition: .2s;
+  }
 }

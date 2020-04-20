@@ -1,0 +1,24 @@
+// "Страница товара" "Таблица с характеристиками" ========================= //
+
+.product-table {
+  position: relative;
+  color: #000000;
+  border: 1px solid $secondFontColor;
+  padding: 65px 100px;
+  width: 630px;
+  height: 410px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  &__title-box {
+    background-color: #FFFFFF;
+    padding: 0 15px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    color: #000000;
+  }
+}

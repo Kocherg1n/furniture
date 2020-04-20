@@ -1,0 +1,20 @@
+.page-controls {
+  position: fixed;
+  top: 540px;
+  right: 30px;
+  display: flex;
+  z-index: 30;
+
+  &__message {
+    display: block;
+    width: 65px;
+    height: 65px;
+  }
+
+  &__request {
+    display: block;
+    width: 65px;
+    height: 65px;
+  }
+}
+

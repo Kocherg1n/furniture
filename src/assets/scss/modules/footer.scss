@@ -37,5 +37,10 @@
 
   &__year {
     color: $secondFontColor;
+    text-align: center;
+  }
+
+  &__phone-link {
+    color: $secondFontColor;
   }
 }

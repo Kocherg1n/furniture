@@ -1,23 +1,34 @@
 // Страница "О Нас", секция "Наши Контакты (ФОРМА)" ========================= //
 
-form.form
-	.form__title Если у Вас остались вопросы, заполните форму и мы свяжемся с Вами
-	.form__label
-		.form__name Имя
-		input(type='text' name='name' required).form__input
-	.form__label
-		.form__name Фамилия
-		input(type='text' name='last-name' required).form__input
-	.form__label
-		.form__name Телефон
-		input(type='text' name='phone' required).form__input
-	.form__label
-		.form__name Почта
-		input(type='text' name='mail' required).form__input
-	.form__label
-		.form__name Комментарий
-		textarea(name='comment' rows='7').form__textarea
-	.form__controls
-		a.form__link Пользовательское соглашение
-		.form__button-box
-			button.form__button.button--second Отправить
+form.form-about
+	.form-about__title Если у Вас остались вопросы, заполните форму и мы ответим
+	label.form-about__label
+		.form-about__name Имя *
+		input(type='text' name='name' required).form-about__input
+	label.form-about__label
+		.form-about__name Телефон *
+		input(type='text' name='phone' required).form-about__input
+	label.form-about__label
+		.form-about__name Комментарий
+		textarea(name='comment' rows='7').form-about__textarea
+	.form-about__controls-title Когда Вам удобнее позвонить?
+	.form-about__controls
+		.form-about__controls-radio
+			label.form-about__label.form-about__radio
+				.form-about__name-radio 8 - 12
+				input(type='radio' name='time').form-about__input-radio
+				span.form-about__radio-icon
+			label.form-about__label.form-about__radio
+				.form-about__name-radio 12 - 17
+				input(type='radio' name='time').form-about__input-radio
+				span.form-about__radio-icon
+			label.form-about__label.form-about__radio
+				.form-about__name-radio 17 - 20
+				input(type='radio' name='time').form-about__input-radio
+				span.form-about__radio-icon
+		label.form-about__label.form-about__checkbox
+			input(type='checkbox' required).form-about__input-checkbox
+			span.form-about__checkbox-icon
+			.form-about__personal-data Я согласен на обработку моих
+				a.form-about__personal-data-link персональных данных
+	button.form-about__button.button--second Отправить

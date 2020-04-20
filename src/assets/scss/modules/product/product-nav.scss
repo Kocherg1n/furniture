@@ -1,0 +1,39 @@
+.product-nav {
+  display: flex;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #E5E5E5;
+  }
+
+  &__item {
+    padding: 10px 45px;
+    border-bottom: 2px solid transparent;
+    color: #000000;
+  }
+
+  &__button {
+    color: #000000;
+  }
+
+  //active nav item class
+
+  &__item--active {
+    border-bottom: 2px solid $secondFontColor;
+    z-index: 10;
+    transition: .2s;
+    font-weight: 700;
+  }
+
+  &__item--active .product-nav__button {
+    color: $secondFontColor;
+    font-weight: 700;
+  }
+}
+

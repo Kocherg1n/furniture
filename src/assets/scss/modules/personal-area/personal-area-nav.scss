@@ -1,0 +1,46 @@
+// Страница "Личный кабинет" "Меню" ========================= //
+
+.personal-area-nav {
+  background: #574F46;
+  height: 100%;
+
+  &__name {
+    padding-top: 55px;
+    text-align: center;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  &__list {
+    margin-top: 80px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__button {
+    padding: 20px 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  &__button-icon {
+    margin-right: 15px;
+    fill: $secondFontColor;
+  }
+
+  //active btn class
+
+  &__button--active {
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  &__button--active .personal-area-nav__button-icon {
+    fill: #000000;
+  }
+}

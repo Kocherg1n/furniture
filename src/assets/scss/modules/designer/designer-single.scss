@@ -15,7 +15,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(179.76deg, #574F46 32.38%, rgba(87, 79, 70, 0.56) 67.1%, rgba(87, 79, 70, 0.8) 99.75%);
-    transform: rotate(-180deg);
+    background: rgba(87, 79, 70, 0.4);
+  }
+
+  &__form {
+    background: rgba(87, 79, 70, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
   }
 }

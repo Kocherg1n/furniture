@@ -1,0 +1,56 @@
+// Страница "Личный кабинет" секция "Избранное" ========================= //
+
+.personal-favorite {
+  padding: 50px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    width: calc(100% / 3 - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 30px 10px;
+    border: 0.5px solid #D29965;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  &__pic {
+    max-width: 90%;
+  }
+
+  &__button-box {
+    background-color: #FFFFFF;
+    padding: 0 10px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__button {
+    color: #000000;
+    background-color: $secondFontColor;
+    padding: 2px 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,23 +1,18 @@
 // Страница "О Нас", секция "Наши Контакты (ФОРМА)" ========================= //
 
-.form {
-  border: 1px solid #D29965;
-  position: relative;
-  padding: 60px 260px 35px 260px;
+.form-about {
+  //padding: 60px 260px 35px 260px;
   margin-top: 40px;
   display: flex;
+  align-items: center;
   flex-direction: column;
 
   &__title {
-    position: absolute;
-    top: -18px;
-    left: 50%;
-    transform: translateX(-50%);
     color: #000000;
-    background-color: #FFFFFF;
     width: 85%;
     text-align: center;
-    font-size: 24px;
+    font-size: rem(24);
+    margin-bottom: 27px;
   }
 
   &__label {
@@ -29,37 +24,63 @@
     font-weight: bold;
   }
 
+  &__name-radio {
+    font-size: 24px;
+    color: #000000;
+  }
+
+  &__radio {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   &__input {
-    border: 1px solid $borderMainColor;
-    width: 100%;
+    border: 0 solid $borderMainColor;
+    border-bottom: 2px solid $borderMainColor;
+    width: 333px;
     padding: 5px 12px;
     height: 35px;
   }
 
+  &__input-radio {
+
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+  }
+
   &__textarea {
-    border: 1px solid $borderMainColor;
-    width: 100%;
-    padding: 5px 12px;
+    border: 0 solid $borderMainColor;
+    border-bottom: 2px solid $borderMainColor;
+    width: 333px;
+    padding: 5px 9px;
   }
 
   &__controls {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 45px;
+  }
+
+  &__controls-radio {
+    display: flex;
+  }
+
+  &__controls-title {
     margin-top: 30px;
-  }
-
-  &__button-box {
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  &__button {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 24px;
+    color: #000000;
   }
 
   &__link {
@@ -70,13 +91,75 @@
     cursor: pointer;
   }
 
-  &__button-box {
+  &__personal-data {
+    color: #000000;
+    font-size: 16px;
+  }
+
+  &__personal-data-link {
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+
+  &__input-radio {
     position: absolute;
-    bottom: -23px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 35px;
-    background-color: #ffffff;
+    opacity: 0;
+  }
+
+  &__input-checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__checkbox-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $secondFontColor;
+    position: relative;
+    margin-right: 12px;
+
+    &:after {
+      content: url("/assets/img/icons/check.svg");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  &__input-checkbox:checked + .form-about__checkbox-icon:after {
+    opacity: 1;
+    transition: .2s;
+  }
+
+  &__radio-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $secondFontColor;
+    position: relative;
+    margin-right: 15px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      background-color: $secondFontColor;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  &__input-radio:checked + .form-about__radio-icon:after {
+    opacity: 1;
+    transition: .2s;
   }
 }

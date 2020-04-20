@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 1000px;
+  max-height: 800px;
 
   &:before {
     position: absolute;
@@ -18,10 +18,10 @@
   }
 
   &__description {
-    margin-top: 200px;
+    margin-top: 280px;
     z-index: 10;
     position: relative;
-    padding: 0 30%;
+    width: 624px;
   }
 
   &__text {

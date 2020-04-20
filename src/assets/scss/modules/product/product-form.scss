@@ -1,0 +1,209 @@
+.product-form {
+  position: relative;
+  padding: 20px;
+  border: 1px solid $secondFontColor;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 490px;
+  max-height: 330px;
+  //margin-top: 100px;
+
+  &__price {
+    font-size: 24px;
+    color: $secondFontColor;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+  }
+
+  &__name {
+    font-size: 24px;
+    color: #000000;
+  }
+
+  &__model {
+    font-size: 20px;
+    color: #000000;
+  }
+
+  &__raiting {
+    color: #000000;
+  }
+
+  &__setting {
+    margin-top: 25px;
+    display: flex;
+  }
+
+  &__setting-names {
+    margin-right: 25px;
+  }
+
+  &__hart {
+    margin-left: 20px;
+  }
+
+  &__raiting-icon {
+    margin-left: 5px;
+  }
+
+  &__colors {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__assembly {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__quantity {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__values {
+    display: flex;
+    margin-bottom: 28px;
+  }
+
+  &__input-radio {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__radio-icon1 {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #D7B678;
+    margin-right: 12px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      border: 3px solid #D7B678;
+    }
+  }
+
+  &__radio-icon2 {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #867667;
+    margin-right: 12px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      border: 3px solid #867667;
+    }
+  }
+
+  &__radio-icon3 {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #474039;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      border: 3px solid #474039;
+    }
+  }
+
+  &__input-radio:checked + .product-form__radio-icon1:after {
+    opacity: 1;
+    transition: .2s;
+  }
+
+  &__input-radio:checked + .product-form__radio-icon2:after {
+    opacity: 1;
+    transition: .2s;
+  }
+
+  &__input-radio:checked + .product-form__radio-icon3:after {
+    opacity: 1;
+    transition: .2s;
+  }
+
+  &__select-box {
+    position: relative;
+
+    &:after {
+      content: url("/assets/img/icons/arr-down.svg");
+      position: absolute;
+      right: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-left: 1px solid $secondFontColor;
+      padding-left: 3px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__select-assembly {
+    background-color: transparent;
+    border: 1px solid $secondFontColor;
+    padding: 5px 50px 5px 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+  }
+
+  &__select-quantity {
+    background-color: transparent;
+    border: 1px solid $secondFontColor;
+    padding: 5px 50px 5px 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+  }
+
+  &__button-box {
+    background-color: #FFFFFF;
+    padding: 0 15px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__button {
+    background: #D29965;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 5px 35px;
+    color: #000000;
+  }
+}

@@ -1,0 +1,19 @@
+// Страница "Контакты" секция "Контакты" ========================= //
+
+section.contacts
+	.container
+		.contacts__title
+			h1.title--subtitle.title--color--black Контакты
+				.title__icon
+				span.subtitle Москва ТЦ "Румянцево" салон Perfecto Casa
+		.contacts__content
+			ul.contacts__list
+				li.contacts__item.contacts__adress Москва, Киевское шоссе, #[br] 22 км. корпус Б 2 этаж
+				li.contacts__item
+					a(href='tel: 8 (495) 532-44-16').contacts__tel 8 (495) 532-44-16
+				li.contacts__item.contacts__time Прием звонков: #[br] с 10:00 до 21:00 (Пн-Вс)
+				li.contacts__socials
+					include ../../modules/social
+			.contacts__map
+				img(src='/assets/img/map.png').contacts__map-pic
+

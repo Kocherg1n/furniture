@@ -1,0 +1,107 @@
+// Страница "Каталог" секция "Каталог" ========================= //
+
+.catalog {
+  background: #FFFFFF;
+  padding: 15px 0 75px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__search {
+    position: relative;
+    display: inline;
+  }
+
+  &__search-button {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__search-icon {
+
+  }
+
+  &__input {
+    border: 1px solid #D29965;
+    border-radius: 50px;
+    background: transparent;
+    padding: 5px 100px 5px 20px;
+    font-size: 14px;
+    width: 510px;
+
+    &::placeholder {
+      color: #D29965;
+    }
+  }
+
+  &__list {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+  }
+
+  &__item {
+    border: 1px solid $secondFontColor;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    width: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    min-width: 280px;
+    margin-bottom: 80px;
+  }
+
+  &__name {
+    color: #000000;
+    font-size: 20px;
+  }
+
+  &__raiting {
+    margin-bottom: 10px;
+    color: #000000;
+    display: flex;
+  }
+
+  &__img {
+
+  }
+
+  &__pic {
+    width: 310px;
+    min-height: 115px;
+  }
+
+  &__price {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  &__btn-box {
+    width: 140px;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    padding: 4px 15px;
+    color: #000000;
+    background: $secondFontColor;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+  }
+}

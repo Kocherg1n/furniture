@@ -76,11 +76,15 @@ section, .section {
   z-index: 10;
 
   &--single {
-    width: rem(73);
-    height: rem(73);
+    width: rem(53);
+    height: rem(53);
     border: 2px solid $mainFontColor;
     border-radius: 50%;
     background-color: transparent;
+  }
+
+  &--single-icon {
+    width: 21px;
   }
 
   &--features {
@@ -316,4 +320,8 @@ section, .section {
 }
 
 
-
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}

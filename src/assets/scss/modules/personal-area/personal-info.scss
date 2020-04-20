@@ -1,0 +1,82 @@
+// Страница "Личный кабинет" секция "Личная Информация" ========================= //
+
+.personal-info {
+  border: 1px solid $secondFontColor;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    font-size: 24px;
+    background-color: #FFFFFF;
+    width: 430px;
+    padding-left: 18px;
+  }
+
+  &__data {
+    color: #000000;
+    font-size: 20px;
+    padding: 70px 180px;
+  }
+
+  &__phone {
+
+  }
+
+  &__mail {
+
+  }
+
+  &__card {
+
+  }
+
+  &__item {
+    margin-bottom: 28px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__phone-num {
+    margin-left: 30px;
+    color: #000000;
+    display: inline;
+  }
+
+  &__mail-adress {
+    margin-left: 50px;
+    color: #000000;
+    display: inline;
+  }
+
+  &__button-card {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #000000;
+    margin-left: 60px;
+  }
+
+  &__button-box {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    padding: 0 15px;
+  }
+
+  &__button {
+    color: #000000;
+    background-color: $secondFontColor;
+    padding: 5px 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+}

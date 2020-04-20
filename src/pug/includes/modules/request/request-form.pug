@@ -1,22 +1,34 @@
 // Страница "Заявка", секция "Форма" ========================= //
 
-section.request-form
-	.request-form__before
-		.request-form__box
-			.request-form__title
-				.title.title--color--black Заполните форму
-				.title__icon
-			form.request-form__form
-				.request-form__form-title Оставьте заявку сейчас  и мы ответим!
-				.request-form__label
-					.request-form__name Имя
-					input(type='text' name='name' required).request-form__input
-				.request-form__label
-					.request-form__name Фамилия
-					input(type='text' name='last-name' required).request-form__input
-				.request-form__label
-					.request-form__name Почта
-					input(type='text' name='last-name' required).request-form__input
-				a.request-form__link Пользовательское соглашение
-				.request-form__button-box
-					button.request-form__button.button--second Отправить
+form.form-request
+	.form-request__title Оставьте заявку сейчас  и мы ответим!
+	label.form-request__label
+		.form-request__name Имя *
+		input(type='text' name='name' required).form-request__input
+	label.form-request__label
+		.form-request__name Телефон
+		input(type='text' name='phone' required).form-request__input
+	label.form-request__label
+		.form-request__name Комментарий
+		textarea(name='comment' rows='7').form-request__textarea
+	.form-request__controls-title Когда Вам удобнее позвонить?
+	.form-request__controls
+		.form-request__controls-radio
+			label.form-request__label.form-request__radio
+				.form-request__name-radio 8 - 12
+				input(type='radio' name='time' value='8-12').form-request__input-radio
+				span.form-request__radio-icon
+			label.form-request__label.form-request__radio
+				.form-request__name-radio 12 - 17
+				input(type='radio' name='time' value='12 - 17' checked).form-request__input-radio
+				span.form-request__radio-icon
+			label.form-request__label.form-request__radio
+				.form-request__name-radio 17 - 20
+				input(type='radio' name='time' value='17 - 20').form-request__input-radio
+				span.form-request__radio-icon
+		label.form-request__label.form-request__checkbox
+			input(type='checkbox' required).form-request__input-checkbox
+			span.form-request__checkbox-icon
+			.form-request__personal-data Я согласен на обработку моих
+				a.form-request__personal-data-link персональных данных
+	button(type='submit').form-request__button.button--second Отправить

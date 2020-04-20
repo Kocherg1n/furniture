@@ -1,0 +1,41 @@
+form.product-form
+	.product-form__price 15 000 руб
+	.product-form__name Диван Белфаст
+		img(src='/assets/img/icons/hart.svg').product-form__hart
+	.product-form__model Textile Beige
+	.product-form__raiting (3)
+		img(src='/assets/img/icons/str.svg').product-form__raiting-icon
+		img(src='/assets/img/icons/str.svg')
+		img(src='/assets/img/icons/str.svg')
+		img(src='/assets/img/icons/str.svg')
+		img(src='/assets/img/icons/str.svg')
+	.product-form__setting
+		.product-form__setting-names
+			.product-form__colors Цвет:
+			.product-form__assembly Собрка:
+			.product-form__quantity Количество:
+		.product-form__setting-value
+			.product-form__values
+				label.product-form__label
+					input(id='color1' type='radio' name='colors' value='color1').product-form__input-radio
+					span.product-form__radio-icon1
+				label.product-form__label
+					input(id='color2' type='radio' name='colors' value='color2').product-form__input-radio
+					span.product-form__radio-icon2
+				label.product-form__label
+					input(id='color3' type='radio' name='colors' value='color3').product-form__input-radio
+					span.product-form__radio-icon3
+			.product-form__values
+				.product-form__select-box
+					select.product-form__select-assembly
+						option(value='1') Название модели и размеры
+						option(value='2') Название модели и размеры
+						option(value='3') Название модели и размеры
+			.product-form__values
+				.product-form__select-box
+					select.product-form__select-quantity
+						option(value='1') 1
+						option(value='2') 2
+						option(value='3') 3
+	.product-form__button-box
+		button(type='submit').button.product-form__button Заказать

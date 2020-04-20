@@ -1,19 +1,39 @@
 // Страница "Вызов дизайнера", секция "Оставьте заявку (ФОРМА)" ========================= //
 
-.designer-form
-	.designer-form__before
-		.designer-form__box
-			.designer-form__title
-				.title.title--color--black Оставьте заявку
-				.title__icon
-			form.designer-form__form
-				.designer-form__form-title Наш сотрудник свяжется с Вами, чтобы оформить заявку
-				.designer-form__label
-					.designer-form__name Имя
-					input(type='text' name='name' required).designer-form__input
-				.designer-form__label
-					.designer-form__name Фамилия
-					input(type='text' name='last-name' required).designer-form__input
-				a.designer-form__link Пользовательское соглашение
-				.designer-form__button-box
-					button.designer-form__button.button--second Отправить
+form.form-designer
+	.form-designer__title Оставьте заявку сейчас  и мы ответим!
+	label.form-designer__label
+		.form-designer__name Имя *
+		input(type='text' name='name' required).form-designer__input
+	label.form-designer__label
+		.form-designer__name Телефон
+		input(type='text' name='phone' required).form-designer__input
+	label.form-designer__label
+		.form-designer__name Комментарий
+		textarea(name='comment' rows='7').form-designer__textarea
+	.form-designer__controls-title Когда Вам удобнее позвонить?
+	.form-designer__controls
+		.form-designer__controls-radio
+			label.form-designer__label.form-designer__radio
+				.form-designer__name-radio Любое время
+				input(type='radio' name='time' value='Любое время').form-designer__input-radio
+				span.form-designer__radio-icon
+			label.form-designer__label.form-designer__radio
+				.form-designer__name-radio 8 - 12
+				input(type='radio' name='time' value='8-12').form-designer__input-radio
+				span.form-designer__radio-icon
+			label.form-designer__label.form-designer__radio
+				.form-designer__name-radio 12 - 17
+				input(type='radio' name='time' value='12 - 17' checked).form-designer__input-radio
+				span.form-designer__radio-icon
+			label.form-designer__label.form-designer__radio
+				.form-designer__name-radio 17 - 20
+				input(type='radio' name='time' value='17 - 20').form-designer__input-radio
+				span.form-designer__radio-icon
+		label.form-designer__label.form-designer__checkbox
+			input(type='checkbox' required).form-designer__input-checkbox
+			span.form-designer__checkbox-icon
+			.form-designer__personal-data Я согласен на обработку моих
+				a.form-designer__personal-data-link персональных данных
+	button(type='submit').form-designer__button.button--second Отправить
+

@@ -1,0 +1,31 @@
+
+
+.technology-desc {
+  background-image: url("/assets/img/des.png");
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(179.82deg, #574F46 0.25%, rgba(87, 74, 71, 0.6) 99.75%);
+  }
+
+  &__title {
+    margin-top: 50px;
+  }
+
+  &__text {
+    position: relative;
+    padding: 0 20%;
+    text-align: justify;
+    margin-top: 100px;
+    font-size: 20px;
+  }
+}

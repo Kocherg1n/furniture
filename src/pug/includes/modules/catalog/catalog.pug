@@ -1,0 +1,87 @@
+// Страница "Каталог" секция "Каталог" ========================= //
+
+section.catalog
+	.container
+		.catalog__title
+			h1.title--subtitle.title--color--black Каталог
+				.title__icon
+				span.subtitle Мы предлагаем мебель
+		.catalog__search
+			input.catalog__input(type='text' placeholder='Введите название товара')
+			button.button.catalog__search-button(type='button')
+				img(src='/assets/img/icons/search.svg').catalog__search-icon
+		ul.catalog__list
+			li.catalog__item
+				.catalog__name Диван Белфаст
+				.catalog__raiting (3)
+					include ../raiting/raiting
+				.catalog__img
+					img.catalog__pic(src='/assets/img/catalog/item2.png')
+				.catalog__price От 15 000
+				.catalog__btn-box
+					button(type='button').catalog__button.button Заказать
+			li.catalog__item
+				.catalog__name Диван Ротердам
+				.catalog__raiting (4)
+					include ../raiting/raiting
+				.catalog__img
+					img(src='/assets/img/catalog/item4.png')
+				.catalog__price От 15 000 руб
+				.catalog__btn-box
+					button(type='button').catalog__button.button Заказать
+			li.catalog__item
+				.catalog__name Диван Угловой
+				.catalog__raiting (6)
+					include ../raiting/raiting
+				.catalog__img
+					img(src='/assets/img/catalog/item7.png')
+				.catalog__price От 15 000 руб
+				.catalog__btn-box
+					button(type='button').catalog__button.button Заказать
+			li.catalog__item
+				.catalog__name Диван Книжка
+				.catalog__raiting (0)
+					include ../raiting/raiting
+				.catalog__img
+					img.catalog__pic(src='/assets/img/catalog/item1.png')
+				.catalog__price От 15 000 руб
+				.catalog__btn-box
+					button(type='button').catalog__button.button Заказать
+			li.catalog__item
+				.catalog__name Диван Честер
+				.catalog__raiting (2)
+					include ../raiting/raiting
+				.catalog__img
+					img(src='/assets/img/catalog/item9.png')
+				.catalog__price От 17 000 руб
+				.catalog__btn-box
+					button(type='button').catalog__button.button Заказать
+			li.catalog__item
+				.catalog__name Диван Кровать
+				.catalog__raiting (7)
+					include ../raiting/raiting
+				.catalog__img
+					img(src='/assets/img/catalog/item6.png')
+				.catalog__price От 18 000 руб
+				.catalog__btn-box
+					button(type='button').catalog__button.button Заказат
+			li.catalog__item
+				.catalog__name Диван Еврокнижка
+				.catalog__raiting (2)
+					include ../raiting/raiting
+				.catalog__img
+					img(src='/assets/img/catalog/item3.png')
+				.catalog__price от 15 000 руб
+				.catalog__btn-box
+					button(type='button').catalog__button.button Заказать
+			li.catalog__item
+				.catalog__name Диван Каир
+				.catalog__raiting (7)
+					include ../raiting/raiting
+				.catalog__img
+					img(src='/assets/img/catalog/item8.png')
+				.catalog__price От 9 000 руб
+				.catalog__btn-box
+					button(type='button').catalog__button.button Заказат
+
+
