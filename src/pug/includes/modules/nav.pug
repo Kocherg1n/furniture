@@ -1,74 +1,59 @@
-// "Социальные сети" ========================= //
-
-nav.nav
-	ul.nav__list
-		li.nav__item
-			a.nav__link(href='/about.html') О Нас
-			ul.nav__sub-nav-list
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') Миссия
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') Факты
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') Будущее
-		li.nav__item
-			a.nav__link(href='#') Технологии
-			ul.nav__sub-nav-list
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='/technology.html') Bespoke&MTM&MTO
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='/manufacture.html') Изготовление и пошив
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='/request.html') Заявка
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='/textile.html') Ткани
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='/leather.html') Кожа
-		li.nav__item
-			a.nav__link(href='#') Коллекция
-				ul.nav__sub-nav-list.nav__sub-nav-list-second
-					.nav__sub-nav-list-box
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='#') Прямые диваны
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='#') Диваны с оттоманкой
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='#') Угловые диваны
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='#') Диванны-холлы
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='#') Кресла
-					.nav__sub-nav-list-box
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='#') Современный стиль
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='#') Традиционный стиль
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='#') Классический стиль
-						li.nav__sub-nav-item
-							a.nav__sub-nav-link(href='/special.html') Спецпредложения
-		li.nav__item
-			a.nav__link(href='/designer.html') Вызов дизайнера
-		li.nav__item
-			a.nav__link(href='#') Контакты
-			ul.nav__sub-nav-list
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') Салонам
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') Дизайнерам
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') Работа у нас
-		li.nav__item
-			a.nav__link(href='#') Личный кабинет
-			ul.nav__sub-nav-list
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') Вход
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') Регистрация
-		li.nav__item
-			a.nav__link(href='#') Язык
-			ul.nav__sub-nav-list.nav__sub-nav-list-lang
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') РУС
-				li.nav__sub-nav-item
-					a.nav__sub-nav-link(href='#') ENG
+.overlay
+	.nav
+		ul.nav__list
+			li.nav__item
+				a(href='./about.html').nav__link О НАС
+				ul.nav__sub-nav-list
+					li.nav__sub-nav-item
+						a(href='./about.html').nav__sub-nav-link Миссия
+					li.nav__sub-nav-item
+						a(href='./about.html').nav__sub-nav-link Факты
+					li.nav__sub-nav-item
+						a(href='./about.html').nav__sub-nav-link Будущее
+			li.nav__item
+				a(href='./technology.html').nav__link ТЕХНОЛОГИИ
+				ul.nav__sub-nav-list
+					li.nav__sub-nav-item
+						a(href='./technology.html').nav__sub-nav-link Bespoke & MTM & MTO
+					li.nav__sub-nav-item
+						a(href='./manufacture.html').nav__sub-nav-link Изготовление и пошив
+					li.nav__sub-nav-item
+						a(href='./textile.html').nav__sub-nav-link Ткани
+					li.nav__sub-nav-item
+						a(href='./leather.html').nav__sub-nav-link Кожа
+			li.nav__item
+				a(href='#').nav__link КОЛЛЕКЦИЯ
+				ul.nav__sub-nav-list
+					li.nav__sub-nav-item
+						a(href='./catalog.html').nav__sub-nav-link Современный стиль
+					li.nav__sub-nav-item
+						a.nav__sub-nav-link Традиционный стиль
+					li.nav__sub-nav-item
+						a.nav__sub-nav-link Классический стиль
+					li.nav__sub-nav-item
+						a.nav__sub-nav-link Прямые диваны
+					li.nav__sub-nav-item
+						a.nav__sub-nav-link Диваны с оттоманкой
+					li.nav__sub-nav-item
+						a.nav__sub-nav-link Угловые диваны
+					li.nav__sub-nav-item
+						a.nav__sub-nav-link Диваны-Холлы
+					li.nav__sub-nav-item
+						a.nav__sub-nav-link Кресла
+					li.nav__sub-nav-item
+						a(href='./special.html').nav__sub-nav-link Спецпредложения
+			li.nav__item
+				a(href='./designer.html').nav__link ВСТРЕЧА С ДИЗАЙНЕРОМ
+			li.nav__item
+				a(href='./request.html').nav__link ЗАЯВКА
+			li.nav__item
+				a(href='./partners.html').nav__link ПАРТНЕРЫ
+			li.nav__item
+				a(href='./contacts.html').nav__link КОНТАКТЫ
+				ul.nav__sub-nav-list
+					li.nav__sub-nav-item
+						a(href='./contacts.html').nav__sub-nav-link Салоны
+					li.nav__sub-nav-item
+						a(href='#').nav__sub-nav-link Дизайнерам
+					li.nav__sub-nav-item
+						a(href='./career.html').nav__sub-nav-link Работа у нас

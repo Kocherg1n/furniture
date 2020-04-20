@@ -59,6 +59,7 @@ section, .section {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  position: relative;
 }
 
 .container {
@@ -324,4 +325,28 @@ section, .section {
   width: 36px;
   height: 36px;
   border-radius: 50%;
+}
+
+.overlay {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+
+  //&__close {
+  //  width: 15px;
+  //  height: 2px;
+  //  background: #FFFFFF;
+  //  position: absolute;
+  //  top: 0;
+  //  left: 50%;
+  //  transform: translateX(-50%);
+  //}
 }

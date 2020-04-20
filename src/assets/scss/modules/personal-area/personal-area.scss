@@ -27,9 +27,16 @@
     flex-direction: column;
   }
 
+  &__tabs {
+    display: none;
+  }
+
+  &__tabs--active {
+    display: flex;
+  }
+
   &__information {
     min-height: 680px;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -37,6 +44,7 @@
   &__favorites {
     min-height: 680px;
   }
+
 
   &__orders {
     min-height: 680px;

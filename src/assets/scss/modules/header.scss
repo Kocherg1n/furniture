@@ -7,16 +7,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    padding: 5px 0;
   }
 
   &__logo {
     font-size: rem(24);
     color: $mainFontColor;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
 
     @include laptop {
       flex: 1;
     }
+  }
+
+  &__logo-link {
+    color: $mainFontColor;
   }
 
   &__nav {
@@ -29,12 +36,46 @@
     color: $secondFontColor;
   }
 
-  &__hamburger {
-    display: none;
-    margin-left: rem(50);
+  &__buttons {
+    display: flex;
+  }
 
-    @include laptop {
-      display: block;
-    }
+  &__buttons-lang-check {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__buttons-lang-check-list {
+    display: none;
+    position: absolute;
+    top: 27px;
+  }
+
+  &__buttons-lang-check-list--active {
+    display: block;
+  }
+
+  &__button-personal-area {
+    font-size: 20px;
+  }
+
+  &__button-lang {
+    border: 1px solid $secondFontColor;
+    font-size: 16px;
+    background-color: $secondFontColor;
+    color: #000000;
+    margin-left: 10px;
+    display: block;
+    width: 43px;
+  }
+
+  &__button-lang--active {
+    color: $secondFontColor;
+    background-color: transparent;
+  }
+
+  &__logo-icon {
+    margin-right: 15px;
   }
 }

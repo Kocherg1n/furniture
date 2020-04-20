@@ -1,100 +1,159 @@
 .nav {
+  max-width: 470px;
+  background: #574F46;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 40000;
+  display: none;
 
   &__list {
     display: flex;
+    flex-direction: column;
+    width: 460px;
   }
 
   &__item {
-    margin-right: rem(40);
+    border-bottom: 1px solid #000000;
     position: relative;
 
-    &:hover .nav__link{
-      color: $mainFontColor;
-      transition: 0.2s;
+    &:nth-child(1) {
+      &:after {
+        position: absolute;
+        content: '';
+        background-color: $secondFontColor;
+        display: none;
+        right: -19px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 27px 0 26px 20px;
+        border-color: #867159 #867159 #867159 $secondFontColor;
+      }
     }
 
-    &:hover .nav__sub-nav-list {
-      display: block;
+    &:nth-child(2) {
+      &:after {
+        position: absolute;
+        content: '';
+        background-color: $secondFontColor;
+        display: none;
+        right: -19px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 27px 0 26px 20px;
+        border-color: #867159 #867159 #867159 $secondFontColor;
+      }
     }
 
-    &:hover .nav__sub-nav-list-second {
-      display: flex;
+    &:nth-child(3) {
+      &:after {
+        position: absolute;
+        content: '';
+        background-color: $secondFontColor;
+        display: none;
+        right: -19px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 27px 0 26px 20px;
+        border-color: #867159 #867159 #867159 $secondFontColor;
+      }
     }
 
     &:last-child {
-      margin-right: 0;
+      &:after {
+        position: absolute;
+        content: '';
+        background-color: $secondFontColor;
+        display: none;
+        right: -19px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 27px 0 26px 20px;
+        border-color: #867159 #867159 #867159 $secondFontColor;
+      }
+    }
+
+    &:hover {
+      background-color: $secondFontColor;
+    }
+
+    &:hover.nav__item:after {
+      display: block;
     }
   }
 
   &__link {
-    color: $secondFontColor;
+    padding: 15px 0;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+
+    &:visited {
+      color: #FFFFFF;
+    }
+
+    &:hover + .nav__sub-nav-list {
+      display: flex;
+    }
   }
 
+  //sub-nav
+
   &__sub-nav-list {
+    background-color: #867159;
     display: none;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
-    background-color: #574F46;
-    width: 250px;
+    flex-direction: column;
     position: absolute;
-    z-index: 20;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 35px;
+    width: 350px;
+    right: -349px;
+    top: 0;
 
-    &-second {
-      width: 470px;
-    }
-
-    &-lang {
-      width: 140px;
-      text-align: center;
-    }
-
-    &:after {
-      content: '';
-      display: block;
-      width: 10px;
-      height: 10px;
-      background-color: #fff;
-      border-radius: 50%;
-      position: absolute;
-      top: -5px;
-      left: 50%;
-      transform: translateX(-50%);
+    &:hover {
+      display: flex;
     }
 
     &:before {
+      position: absolute;
       content: '';
       display: block;
-      width: 75%;
-      height: 20px;
-      position: absolute;
-      top: -20px;
+      left: -20px;
+      height: 100%;
+      width: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 20;
     }
   }
 
   &__sub-nav-item {
-    display: flex;
-
-    &:hover .nav__sub-nav-link {
-      transition: 0.2s;
-      background-color: #574F46;
-      color: $mainFontColor;
-    }
-
-    &:last-child {
-      padding-bottom: 0;
-    }
+    border-bottom: 1px solid #000000;
   }
 
   &__sub-nav-link {
-    color: $secondFontColor;
+    padding: 15px 0;
     display: block;
-    flex: 1;
-    padding: 15px 30px;
+    text-align: center;
 
-    &:first-child {
-      padding-top: 15px;
+    &:visited {
+      color: #FFFFFF;
+    }
+
+    &:hover {
+      color: $secondFontColor;
     }
   }
 }
+
+

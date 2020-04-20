@@ -1,10 +1,17 @@
 .header
   .container
     .header__content
-      .header__logo
-        img.logo(src='/assets/img/icons/logo.svg' alt='Логотип компании')
-      .header__nav
-        include ../modules/nav
-      .header__contacts
       .header__hamburger
         include ../modules/hamburger
+      .header__logo
+        a(href='./index.html').header__logo-link
+          img.header__logo-icon(src='/assets/img/icons/logo-h.svg' alt='Логотип компании')
+          | Perfecto Casa
+      .header__buttons
+        button(type='button').button.header__button-personal-area Вход/Регистрация
+        .header__buttons-lang-check
+          button(type='button').button.header__button-lang.header__button-lang--active RU
+          .header__buttons-lang-check-list
+            button(type='button').button.header__button-lang ES
+            button(type='button').button.header__button-lang EN
+
